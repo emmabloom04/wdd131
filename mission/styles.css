@@ -1,0 +1,16 @@
+body {
+    width: 600px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin: auto;
+}
+.subtitle {
+    color: #006EB6;
+}
+.list {
+    text-align: left;
+}
+img {
+    width: 150px;
+}
