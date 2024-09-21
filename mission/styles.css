@@ -2,15 +2,29 @@ body {
     width: 600px;
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
-    text-align: center;
     margin: auto;
+    line-height: 1.5;
 }
 .subtitle {
     color: #006EB6;
+    font-size: .8em;
 }
-.list {
+header {
+    margin-top: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+main {
     text-align: left;
+}
+.list-item {
+    padding: 10px;
 }
 img {
     width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
 }
