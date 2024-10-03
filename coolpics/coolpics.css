@@ -27,12 +27,10 @@ header, footer {
 .meu, nav, footer {
     font-family: var(--primary-font);
 }
-.menu {
-    display: none;
-}
 nav {
     display: flex;
-    justify-content: space-around;
+    align-items: space-around;
+    flex-direction: column;
 }
 a {
     color: var(--text-light);
@@ -54,12 +52,27 @@ img {
 .gallery {
     justify-content: center;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto;
     padding-bottom: 20px;
 }
-@media (max-width: 700px) {
+@media (min-width: 700px) {
     .gallery {
         display: grid;
         grid-template-columns: auto auto;
+    }
+    
+}
+@media (min-width: 1000px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    nav {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+    .menu {
+        display: none;
     }
 }
