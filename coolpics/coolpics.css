@@ -29,11 +29,14 @@ header, footer {
 }
 nav {
     display: flex;
-    align-items: space-around;
+    justify-content: space-around;
     flex-direction: column;
 }
 a {
     color: var(--text-light);
+}
+.hide {
+    display: none;
 }
 body {
     background-color: var(--text-light);
@@ -71,6 +74,9 @@ img {
         display: flex;
         justify-content: space-around;
         flex-direction: row;
+    }
+    .hide {
+        display: block;
     }
     .menu {
         display: none;
