@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button id="button">Click ME!</button>
+    <ul id="list">
+        <li>Hello</li>
+        <li>Hello</li>
+        <li>Hello</li>
+        <li>Hello</li>
+        <li>Hello</li>
+        <li>Hello</li>
+        <li>Hello</li>
+    </ul>
+
+    <script>
+        // const getName = () => {
+
+        // }
+        // A way to declare a func
+
+        const button = document.getElementById("button");
+        button.addEventListener('click', handleClick);
+
+        function handleClick() {
+            console.log('Click workd');
+        }
+
+        for (let i = 0; i < 10; i++) {
+            console.log(i)
+        }
+
+        const list = document.getElementById("list");
+        console.log(list.children);
+
+        for (let i = 0; i < list.children.length; i++) {
+            const child = list.children[i];
+            console.log(child);
+        }
+    </script>
+</body>
+</html>
