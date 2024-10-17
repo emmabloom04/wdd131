@@ -30,6 +30,9 @@ nav {
   text-align: right;
   padding: 15px;
 }
+header {
+  padding-bottom: 15px;
+}
 .book-review,
 .book-info p,
 .filters {
@@ -40,6 +43,39 @@ nav {
   font-family: var(--headline-font);
   color: var(--primary-color);
 }
+#grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  column-gap: 15px;
+}
+.magyk-review {
+  grid-column: 1/2;
+  margin-left: 15px;
+}
+.magyk-info {
+  grid-column: 2/3;
+}
+.magnus-review {
+  grid-column: 1/2;
+  margin-left: 15px;
+}
+.mangus-info {
+  grid-column: 2/3;
+}
 .filters {
   outline: 2px solid var(--outline);
+  grid-column: 3/4;
+  grid-row: 1/3;
+  padding: 10px;
+  margin-right: 15px;
+}
+.skiptocontent a {
+  position: absolute;
+  left: -9999px;
+  background-color: red;
+  color: yellow;
+}
+.skiptocontent a:focus {
+  left: 0;
 }
