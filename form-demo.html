@@ -1,0 +1,64 @@
+<!-- form-demo.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout Form</title>
+    <link rel="stylesheet" href="form-demo.css" />
+    <script src="form-demo.js" defer></script>
+  </head>
+  <body>
+    <header><h1>Checkout</h1></header>
+    <main>
+      <section class="errors"></section>
+      <form id="checkoutForm" action="completed.html">
+        <ul>
+          <li>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="full-name" required />
+          </li>
+          <li>
+            <label for="mail">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </li>
+          <li>
+            <label for="address">Address</label>
+            <textarea id="address" name="address" required></textarea>
+          </li>
+          <li>
+            <label for="paymentMethod">Payment Method:</label>
+            <select id="paymentMethod" name="paymentMethod" required>
+              <option value="">Select Payment Method</option>
+              <option value="creditCard">Credit Card</option>
+              <option value="paypal">PayPal</option>
+            </select>
+          </li>
+          <li class="hide credit-card">
+            <label for="credit-card">Credit Card Number:</label>
+            <input
+              type="text"
+              id="credit-card"
+              name="credit-card"
+              pattern="[0-9]{16}"
+              required
+            />
+          </li>
+          <li class="hide pay-pal">
+            <label for="pay-pal">PayPal Username</label>
+            <input
+              type="text"
+              id="pay-pal"
+              name="pay-pal"
+              placeholder="Enter PayPal username"
+              required
+            />
+          </li>
+          <li class="button">
+            <button type="submit">Place Order</button>
+          </li>
+        </ul>
+      </form>
+    </main>
+  </body>
+</html>
