@@ -35,6 +35,7 @@ form {
 }
 fieldset {
   margin-bottom: 2em;
+
 }
 input,
 select,
@@ -88,6 +89,14 @@ input:hover::placeholder {
 }
 .columns div {
   width: 48%;
+}
+.participants {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
+}
+#add {
+    grid-column: 1/3;
 }
 
 /* Style checkbox and radio. To do this we have to hide the defaults then we create our own */
