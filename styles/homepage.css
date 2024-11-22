@@ -1,45 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Slabo+13px&family=Walter+Turncoat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Slabo+13px&family=Walter+Turncoat&display=swap");
 
 :root {
-    --primary-color: #C5B4E3;
-    --secondary-color: #9669e4;
-    --dark-outline: #7754b5;
-    --headline-font: "Walter Turncoat";
-    --body-font: "Slabo 13px";
+  --primary-color: #c5b4e3;
+  --secondary-color: #9669e4;
+  --dark-outline: #7754b5;
+  --headline-font: "Walter Turncoat";
+  --body-font: "Slabo 13px";
 }
 
 body {
-    font-family: var(--body-font);
-    margin: 0 auto;
-    padding: 0 auto;
-    text-align: center;
+  font-family: var(--body-font);
+  margin: 0 auto;
+  padding: 0 auto;
+  text-align: center;
 }
 h1 {
-    font-family: var(--headline-font);
+  font-family: var(--headline-font);
 }
 .links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .links a {
-    margin: 10px;
-    padding: 10px;
-    border-radius: 5px;
-    border: var(--secondary-color) 1px solid;
-    background-color: var(--primary-color);
-    width: fit-content;
-    text-decoration: none;
-    color: black;
-    box-shadow: 2px 2px 2px gray;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: var(--secondary-color) 1px solid;
+  background-color: var(--primary-color);
+  width: fit-content;
+  text-decoration: none;
+  color: black;
+  box-shadow: 2px 2px 2px gray;
 }
 
 .links a:hover {
-    background-color: var(--secondary-color);
-    color: white;
-    border: var(--dark-outline) 1px solid;
+  background-color: var(--secondary-color);
+  color: white;
+  border: var(--dark-outline) 1px solid;
 }
 
 .links a:active {
-    transform: translateY(3px);
+  transform: translateY(3px);
 }
