@@ -62,15 +62,18 @@ function renderRecipes(recipeList) {
 	// get the element we will output the recipes into
     let recipeDiv = document.querySelector(".recipe");
 	// use the recipeTemplate function to transform our recipe objects into recipe HTML strings
-    
-
+    let html = "";
+    recipeList.forEach(function(recipe) {
+        html += recipeTemplate(recipe);
+    })
 	// Set the HTML strings as the innerHTML of our output element.
+    recipeDiv.innerHTML = html;
 
 }
 
 function init() {
   // get a random recipe
-  const recipe = getRandomListEntry(recipes)
+  const recipe = randomRecipe(recipes)
   // render the recipe with renderRecipes.
   renderRecipes([recipe]);
 }
